@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="backgr">
+        <div class="tableWR">
+            <table id="FavSerials">
+                <thead>
+                <tr>
+                    <th data-type="string">Название</th>
+                    <th data-type="number">Количество сезонов</th>
+                    <th data-type="number">Оценка на кинопоиске</th>
+                    <th data-type="number">Год производства</th>
+                    <th data-type="bool">Статус</th>
+                    <th class="delete"></th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Менталист</td>
+                    <td>7</td>
+                    <td>8.1</td>
+                    <td>2008</td>
+                    <td>Окончен</td>
+                    <td class="delete"><button><img src="trashcan.jpg" alt="Удалить"></button></td>
+                </tr>
+                <tr>
+                    <td>Ты</td>
+                    <td>3</td>
+                    <td>7.4</td>
+                    <td>2018</td>
+                    <td>Не окончен</td>
+                    <td class="delete"><button><img src="trashcan.jpg" alt="Удалить"></button></td>
+                </tr>
+                <tr>
+                    <td>Бродчёрч</td>
+                    <td>3</td>
+                    <td>8.0</td>
+                    <td>2013</td>
+                    <td>Окончен</td>
+                    <td class="delete"><button><img src="trashcan.jpg" alt="Удалить"></button></td>
+                </tr>
+                <tr>
+                    <td>Сверхъестественное</td>
+                    <td>15</td>
+                    <td>8.2</td>
+                    <td>2005</td>
+                    <td>Окончен</td>
+                    <td class="delete"><button><img src="trashcan.jpg" alt="Удалить"></button></td>
+                </tr>
+            </table>
+        </div>
     
+        <form id="addTableRow">
+            <label for="titleInput">Название</label>
+            <input id="titleInput" type="text">
+            <label for="seasonsInput">Количество сезонов</label>
+            <input id="seasonsInput" type="text">
+            <label for="rateInput">Оценка на Кинопоиске</label>
+            <input id="rateInput" type="text">
+            <label for="yearInput">Год производства</label>
+            <input id="yearInput" type="text">
+            <label for="statusInput">Окончен
+                <input id="statusInput" type="checkbox">
+            </label>
+            <input type="submit" value="Добавить">
+        </form>
+    </div>
 </body>
 </html>
