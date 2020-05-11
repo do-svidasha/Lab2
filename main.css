@@ -28,8 +28,9 @@ label {
 }
 
 table {
-border-collapse: collapse;
-background-color: #ffc29f71;
+    border-collapse: collapse;
+    background-color: #ffc29f71;
+    text-align: center;
 }
 
 th,
@@ -39,24 +40,15 @@ td {
   border: 3px solid #f1b84c;
 }
 
-.delete {
-    opacity: 1;
-    border: none;
-    background-color: #ffffff;
-}
-
 th:last-child,
 td:last-child {
   width: 0em;
+  border: none;
+  background-color: #ffffff;;
 }
 
-th:last-child:hover,
-td:last-child:hover {
+th:last-child:hover {
   cursor: initial;
-}
-
-th {
-    text-align: left;
 }
 
 th:hover,
@@ -87,4 +79,5 @@ img{
     width: 40px;
     height: 35px;
     opacity: 0.7;
+    margin: 0 auto;
 }
