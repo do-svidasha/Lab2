@@ -44,8 +44,7 @@ const sortTable = (columnIndex) => {
             shouldSwitch = true;
               break;
           }
-      }
-      
+      } 
     }
     if (shouldSwitch) {
       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
@@ -72,7 +71,6 @@ const appendRow = () => {
 
     let delButton = document.createElement('button');
     delButton.innerHTML = '<img src="trashcan.jpg" alt="Удалить">';
-    delButton.className = "delete";
     row.insertCell(-1).appendChild(delButton);
 
     title.value = '';
